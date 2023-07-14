@@ -1,7 +1,7 @@
 import React from "react";
 import { useRef, useEffect } from "react";
 import ArcText from "arc-text";
-import Avatar from '@mui/material/Avatar';
+import { Avatar } from "@mui/material";
 
 
 import Box from "@mui/material/Box";
