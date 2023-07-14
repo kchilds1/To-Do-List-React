@@ -36,7 +36,7 @@ const NavBar = () => {
       </div>
       <div style={{display:"flex", alignItems:'center'}}>
         <NotificationsIcon />
-        <Avatar src="MyAvatar.jpg" />
+        <Avatar />
       </div>
     </Box>
   );
