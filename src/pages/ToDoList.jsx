@@ -79,27 +79,7 @@ useEffect (() => {
       <Stack direction='row' spacing={2} sx={{marginTop:'4px'}}>
         {inputObjects.map((input, index) =>(<ToDoItem task={input.task} details={input.details} handleRemove={() => removeTask(index)}/>
       ))}
-        {/* {inputObjects.map((input, index) =>(<>
-          <Card key={index} sx={{borderWidth:'3px', borderStyle: 'solid', marginTop:'4px',borderRadius:'10px', padding:'5px'}}>
-            <CardHeader title={input.task}></CardHeader>
-            <CardContent>{input.details}</CardContent>
-            <CardActionArea>
-              <Button sx={taskInputStyles.Button} key={index} onClick= {() => removeTask(index)}>REMOVE</Button>
-              <Button sx={taskInputStyles.Button} key={index} onClick= {() => detailsButton(index)}>DETAILS</Button>
-            </CardActionArea>
-        </Card>
-        <Dialog open={true}>
-        <DialogTitle>{input.task}</DialogTitle>
-        <DialogContent>
-          <DialogContentText id="alert-dialog-slide-description">
-          {input.details}
-          </DialogContentText>
-        </DialogContent>
-        </Dialog>
-        </>
-      ))} */}
       </Stack>
-      {/* {showAlertDialog && <AlertDialogSlide />} */}
       </Container>
    );
 };
