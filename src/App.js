@@ -1,4 +1,4 @@
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import React, { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
@@ -9,7 +9,7 @@ import ToDoList from './pages/ToDoList';
 import Login from './pages/Login';
 import NavBar from './components/NavBar/NavBar';
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path:'/',
     element: <Home />,
