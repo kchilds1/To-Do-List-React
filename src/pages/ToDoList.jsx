@@ -60,7 +60,7 @@ useEffect (() => {
              console.log(`details button was clicked for ${index}`)
              
     };
-
+console.log("input: " , task)
   return (
     <Container>
       <Box component="form"
